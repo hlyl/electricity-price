@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "electricity-price"
-version = "1.1.0"
+version = "1.1.1"
 description = "Simple python script to fetch energy prices from entsoe.eu and publish them to MQTT broker."
 authors = ["Matti Laakso <matti.laakso@outlook.com>"]
 

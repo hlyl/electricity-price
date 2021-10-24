@@ -176,6 +176,6 @@ class EntsoeClient:
                 pos = int(point.findtext('d:position', namespaces=xml_ns))
                 price = float(point.findtext('d:price.amount', namespaces=xml_ns))
                 if pos > skip_begin and pos <= 24 - skip_end:
-                    prices.append({"time": start + (pos - 1) * datetime.timedelta(hours=1),"price": (1 + vat) * price / 1000000}) # Add VAT, convert to EUR/Wh
+                    prices.append({"time": start + (pos - 1) * datetime.timedelta(hours=1),"price": (1 + vat) * price / 1000}) # Add VAT, convert to EUR/kWh
 
         return prices
